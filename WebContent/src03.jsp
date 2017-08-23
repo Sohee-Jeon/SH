@@ -36,9 +36,3 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuhxkgLGaF26JDdqGW9mO0jSTNIf9UKe0&callback=initMap"
     async defer></script>
-
-
-
-
-
-
