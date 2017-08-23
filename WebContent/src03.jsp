@@ -7,14 +7,28 @@
 
 <script>
 	function initMap() {
-		// Create a map object and specify the DOM element for display.
+		var pos= {
+			"lat" : 37.4985, 
+			"lng" : 127.031
+		};
 		var map = new google.maps.Map(document.getElementById('map'), {
-			"center": {
-				"lat" : 37.4985, 
-				"lng" : 127.031
-			},
+			"center": pos,
 			"zoom" : 15
 		});
+		var marker = new google.maps.Marker({
+			"map" : map,
+			"position" : pos,
+			"title" : "Hello World!"
+		});
+		var marker_2 = new google.maps.Marker({
+			"map" : map,
+			"position" : {
+				"lat" : 37.498034,
+				"lng" : 127.027430
+			},
+			"title" : "Hi World!"
+		});
+		
 	}
 
 </script>
@@ -22,3 +36,9 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuhxkgLGaF26JDdqGW9mO0jSTNIf9UKe0&callback=initMap"
     async defer></script>
+
+
+
+
+
+
